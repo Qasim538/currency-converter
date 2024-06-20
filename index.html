@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="converter">
+    <h1>Currency Converter</h1>
+    <div class="currency-input">
+      <div class="from">
+        <img src="https://www.worldometers.info/img/flags/us-flag.gif" alt="From Currency Flag">
+        <select class="cur-1">
+          <option value="AED">AED</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="USD" selected>USD</option>
+        </select>
+        <input type="number" class="cur-1-input" value="1">
+      </div>
+      <button class="switch-cur">Switch</button>
+      <div class="to">
+        <img src="https://www.worldometers.info/img/flags/ae-flag.gif" alt="To Currency Flag">
+        <select class="cur-2">
+          <option value="AED" selected>AED</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="USD">USD</option>
+        </select>
+        <input type="number" class="cur-2-input" value="1">
+      </div>
+    </div>
+    <div class="rate">
+      <p class="base"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
